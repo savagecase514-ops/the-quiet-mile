@@ -76,7 +76,7 @@ const Dashboard = () => {
         </form>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="p-6 bg-neutral-50 rounded-3xl border border-neutral-100">
           <h3 className="font-semibold text-neutral-900 mb-2">Recent Tasks</h3>
           <p className="text-sm text-neutral-500">View the history of processed links and generated content.</p>
@@ -87,6 +87,16 @@ const Dashboard = () => {
                 <span className="text-xs font-medium text-neutral-400 uppercase">Completed</span>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="p-6 bg-neutral-50 rounded-3xl border border-neutral-100">
+          <h3 className="font-semibold text-neutral-900 mb-2">TikTok Hook Generator</h3>
+          <p className="text-sm text-neutral-500">Generate viral hooks for your short-form content.</p>
+          <div className="mt-4">
+            <button className="w-full py-3 bg-white border border-neutral-200 rounded-xl text-sm font-medium hover:bg-neutral-50 transition-colors">
+              Create New Hooks
+            </button>
           </div>
         </div>
         
