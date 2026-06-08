@@ -22,7 +22,7 @@ const Dashboard = () => {
     <div className="max-w-4xl mx-auto px-6 py-12">
       <div className="mb-12">
         <h1 className="text-3xl font-bold text-neutral-900 mb-2">AI Assistant Dashboard</h1>
-        <p className="text-neutral-500 text-lg">Process new product links to generate content and storefront listings.</p>
+        <p className="text-neutral-500 text-lg">Affiliate product importer and AI content generator.</p>
       </div>
 
       <div className="bg-white rounded-3xl border border-neutral-100 shadow-sm overflow-hidden p-8 mb-12">

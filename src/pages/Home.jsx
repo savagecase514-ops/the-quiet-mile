@@ -6,7 +6,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold tracking-tight text-neutral-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-6">
             Quiet Utility. Elevated Living.
           </h1>
           <p className="text-xl text-neutral-500 mb-10 leading-relaxed">

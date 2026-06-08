@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ShoppingBag, Settings } from 'lucide-react';
+import { Settings } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -17,9 +17,6 @@ const Header = () => {
             <Settings size={18} />
             <span>Dashboard</span>
           </Link>
-          <div className="pl-4 border-l border-neutral-200">
-             <ShoppingBag size={20} className="text-neutral-400" />
-          </div>
         </nav>
       </div>
     </header>
