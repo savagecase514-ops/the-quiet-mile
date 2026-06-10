@@ -17,14 +17,22 @@ const Dashboard = () => {
       const product = await extractProductInfo(url);
       const content = generateContent(product);
       
+      // Save to database via API
+      const saveResponse = await fetch('/api/products', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          ...product, 
+          ai_content: JSON.stringify(content) 
+        })
+      });
+
+      if (!saveResponse.ok) throw new Error('Failed to save to database');
+      
       setGeneratedData({ product, content });
       setIsProcessing(false);
       setSuccess(true);
       setUrl('');
-      
-      // Note: In a real app, we would call an API here to save to the database.
-      // For this task, we are simulating the successful save to team-db.
-      console.log('Saved to team-db:', { ...product, ai_content: JSON.stringify(content) });
       
       setTimeout(() => setSuccess(false), 3000);
     } catch (error) {

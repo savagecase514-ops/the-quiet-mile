@@ -10,6 +10,10 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: true,
+    proxy: {
+      '/api': 'http://localhost:3001',
+      '/r': 'http://localhost:3001'
+    }
   }
 })
